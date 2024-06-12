@@ -6,11 +6,11 @@ public class Car {
     private String colour;
     private int year;
 
-    public Car(String make, String model, int year, String colour) {
+    public Car(String make, String model, String colour, int year) {
         this.make = make;
         this.model = model;
-        this.year = year;
         this.colour = colour;
+        this.year = year;
     }
 
     public String getMake() {
@@ -37,4 +37,3 @@ public class Car {
         return String.format("%s %s %s (%d)", colour, make, model, year);
     }
 }
-
