@@ -2,8 +2,8 @@ package com.cbfacademy.accounts;
 
 public class Account {
 
-  private int accountNumber;
-  private double balance;
+  protected int accountNumber;
+  protected double balance;
 
   public Account(int accountNumber, double balance) {
     this.accountNumber = accountNumber;
@@ -24,12 +24,12 @@ public class Account {
   }
 
   public double withdraw(double requested) {
-    if (requested < 0 || this.balance < requested) {
+    if (this.balance < requested || requested < 0) {
       return 0;
     } else {
-            this.balance -= requested;
-            return requested;
-          }
-        }
-      
-      }
+      this.balance -= requested;
+      return requested;
+    }
+  }
+
+}
