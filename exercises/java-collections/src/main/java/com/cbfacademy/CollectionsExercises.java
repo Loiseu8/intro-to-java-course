@@ -8,76 +8,79 @@ import java.util.Stack;
 public class CollectionsExercises {
 
     public LinkedList<Integer> useLinkedList() {
+        // Create an empty linked list of integers
         LinkedList<Integer> integers = new LinkedList<>();
-        // System.out.println(integers.size());
 
-        // create an empty linked list
-        //  - add 4 as the first element of the list
-        //  - then add 5, 6, 8, 2, 9 to the list
-        //  - add another 2 as the last element of the list
-        //  - add 4 as the 3rd element of the list
-        integers.add(4);
+        // Add elements as specified
+        integers.add(4);            // Add 4 as the first element
         integers.add(5);
         integers.add(6);
         integers.add(8);
         integers.add(2);
         integers.add(9);
-        integers.addLast(2);
-        integers.add(2,4);
+        integers.addLast(2);        // Add 2 as the last element
+        integers.add(2, 4);         // Add 4 as the 3rd element (index 2)
 
-        //  - invoke the method element() on the list and print the result on the screen
-            System.out.print(integers.element());
+        // Invoke the element() method and print the result (prints first element)
+        System.out.print(integers.element());
 
-        //  - return the list
-            return integers;
-       
+        // Return the list
+        return integers;
     }
 
-    // create an empty stack
-        //  - add 5, 6, 8, 9 to the stack
-        //  - print the first element of the stack on the screen
-        //  - print the last element of the stack on the screen
-        //  - invoke the method pop() on the stack and print the result on the screen
-        //  - invoke the push(4) method on the stack
-        //  - return t 
-
     public Stack<Integer> useStack() {
-    Stack<Integer> stack = new Stack<>();
-    stack.add(5);
-    stack.add(6);
-    stack.add(8);
-    stack.add(9);
-    System.out.print(stack.get(0));
-    System.out.print(stack.getLast());
-    System.out.print(stack.pop());
-    stack.push(4);
-    return stack;
-}
+        // Create an empty stack of integers
+        Stack<Integer> stack = new Stack<>();
+
+        // Add elements as specified
+        stack.push(5);
+        stack.push(6);
+        stack.push(8);
+        stack.push(9);
+
+        // Print the first and last elements of the stack
+        System.out.print(stack.firstElement()); // First element
+        System.out.print(stack.peek());         // Last element (top of the stack)
+
+        // Invoke pop() to remove and print the top element
+        System.out.print(stack.pop());
+
+        // Push 4 onto the stack
+        stack.push(4);
+
+        // Return the stack
+        return stack;
+    }
 
     public ArrayDeque<Integer> useArrayDeque() {
+        // Create an empty ArrayDeque of integers
         ArrayDeque<Integer> deque = new ArrayDeque<>();
+
+        // Add elements as specified
         deque.add(5);
         deque.add(6);
         deque.add(8);
         deque.add(9);
-        System.out.print(deque.getFirst());
-        System.out.print(deque.getLast());
-        System.out.print(deque.poll());
-        System.out.print(deque.element());
-        return deque;
 
-        // create an empty arrayDeque
-        //  - add 5, 6, 8, 9 to the queue
-        //  - print the first element of the queue on the screen
-        //  - print the last element of the queue on the screen
-        //  - invoke the method poll() on the queue and print the result on the screen
-        //  - invoke the element() method on the queue and print the result on the screen
-        //  - return the queue
+        // Print the first and last elements of the deque
+        System.out.print(deque.getFirst());     // First element
+        System.out.print(deque.getLast());      // Last element
+
+        // Invoke poll() to remove and print the first element
+        System.out.print(deque.poll());
+
+        // Invoke element() to retrieve and print the first element without removing it
+        System.out.print(deque.element());
+
+        // Return the deque
+        return deque;
     }
 
     public HashMap<Integer, String> useHashMap() {
+        // Create an empty HashMap of Integer keys and String values
         HashMap<Integer, String> hash = new HashMap<>();
 
+        // Add entries as specified
         hash.put(1, "TypeScript");
         hash.put(2, "Kotlin");
         hash.put(3, "Python");
@@ -85,28 +88,16 @@ public class CollectionsExercises {
         hash.put(5, "JavaScript");
         hash.put(6, "Rust");
 
-        System.out.print(hash.keySet());
-        System.out.print(hash.values());
-        System.out.print(containsValue(value:"English"));
+        // Print the set of keys and values
+        System.out.print(hash.keySet());        // Print all keys
+        System.out.print(hash.values());        // Print all values
+
+        // Check if the map contains "English" as a value and print the result
+        System.out.print(hash.containsValue("English"));
+
+        // Return the map
         return hash;
-
-
-
-      }
-
-        // create an empty hash map
-        //  - add {1, TypeScript} entry to the map
-        //  - add {2, Kotlin} entry to the map
-        //  - add {3, Python} entry to the map
-        //  - add {4, Java} entry to the map
-        //  - add {5, JavaScript} entry to the map
-        //  - add {6, Rust} entry to the map
-        //  - determine the set of keys from the map and print it on the screen
-        //  - determine the set of values from the map and print it on the screen
-        //  - determine whether the map contains "English" as a language and print the result on the screen
-        //  - return the map
-        
-
+    }
 
     public String getName() {
         return "Collections Exercises";
