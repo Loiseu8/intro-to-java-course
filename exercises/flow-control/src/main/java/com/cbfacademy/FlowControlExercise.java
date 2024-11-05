@@ -8,7 +8,6 @@ import java.util.Collections;
 
 public class FlowControlExercises {
 
-<<<<<<< HEAD
     public List<String> fizzBuzz(List<Integer> numbers) {
         // TODO - Implement this method such that
         //  it creates a list where for each element of the input list ${numbers}
@@ -26,7 +25,6 @@ public class FlowControlExercises {
         //  - if the ${number} is invalid, the method should return "Invalid month number"
         throw new RuntimeException("Not implemented");
     }
-=======
 
     // Implement this method such that
     //  it creates a list where for each element of the input list ${numbers}
@@ -116,10 +114,9 @@ public class FlowControlExercises {
         //  - determines the sum of all the odd numbers in the list
         //  - returns a map with two entries:
 
-<<<<<<< HEAD
+
     public List<Integer> reverse(ArrayList<Integer> numbers) {
         // TODO - Implement this method such that
-=======
 
             List<Integer> numbers = new ArrayList<>();
             for (int i = 1; i <= 100; i++) {
@@ -166,3 +163,6 @@ public List<Integer> reverse(ArrayList<Integer> numbers) {
 }
 =======
 >>>>>>> 68f709d (Practiced using switch-case statements)
+
+public void main() {
+}
